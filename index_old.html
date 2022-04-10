@@ -1,0 +1,87 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Mongoose Plugins Search</title>
+    <link rel="stylesheet" href="./public/style.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,700">
+
+    <style>
+      a, a:visited {
+        color: #800;
+      }
+    </style>
+
+    <script type="text/javascript">
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', 'https://g0a3nbw0xa.execute-api.us-east-1.amazonaws.com/prod/track', true);
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.onreadystatechange = function() {};
+      xhr.send(JSON.stringify({
+        path: window.location.pathname,
+        hostname: window.location.hostname,
+        hash: window.location.hash
+      }));
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+      <div>
+        <div id="header">
+          <h1>
+            <a href="http://mongoosejs.com">
+              <span class="mongoose">
+                mongoose
+              </span>
+            </a>
+          </h1>
+          <h2 id="plugins-subheader">
+            plugins search
+          </h2>
+          <div>
+            <input id="term" placeholder="Search">
+          </div>
+          <ul id="result">
+            <div id="addyourown">
+              <p>
+                Want to show off your <a href="http://mongoosejs.com/docs/plugins.html">plugin</a> here?
+                Publish it to <a href="http://www.npmjs.com">npm</a> and add "mongoose" as a <a href="https://docs.npmjs.com/files/package.json#keywords">keyword</a>.
+              </p>
+
+              <p>
+                Check out our officially supported plugins:
+                <div>
+                  &#9658; <a href="/plugins/autopopulate">mongoose-autopopulate</a>
+                </div>
+                <div>
+                  &#9658; <a href="/plugins/lean-virtuals">mongoose-lean-virtuals</a>
+                </div>
+                <div>
+                  &#9658; <a href="/plugins/int32">mongoose-int32</a>
+                </div>
+                <div>
+                  &#9658; <a href="/plugins/double">@mongoosejs/double</a>
+                </div>
+                <div>
+                  &#9658; <a href="/plugins/update-versioning">mongoose-update-versioning</a>
+                </div>
+                <div>
+                  &#9658; <a href="/plugins/lean-getters">mongoose-lean-getters</a>
+                </div>
+              </p>
+
+              <p class="improve">
+                <a href="https://github.com/vkarpov15/mongooseplugins">
+                  improve this site
+                </a>
+              </p>
+              <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7DT537&placement=mongoosejsio" id="_carbonads_js"></script>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./public/main.js"></script>
+  </body>
+</html>
